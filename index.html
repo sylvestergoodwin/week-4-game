@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+	
+</head>
+
+<body">
+  <div class="jumbotron" >
+    <div class=" text-center">
+      <h2> Crystal Collector Game </h2> 
+    </div>
+    <div id="panel panel-default" >
+      <div id="game-info" class="panel-body label">
+        <div class="container">
+				  <div class="row">
+            <div class="col-mid-4">
+              <div class="tg-games-info"> Player Name	</div>
+            </div>
+            <div class="col-mid-4">
+              <div class="tg-games-info">	Wins</div>
+            </div>
+            <div class="col-mid-4">  
+              <div class="tg-games-info"> Losses </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-mid-4">
+		<div id="cr-player-name-1" class="tg-games-info text-center">	</div>
+            </div>
+            <div class="col-mid-4">
+		<div id="cr-player-score"  class="tg-games-info text-center"> 	</div>
+            </div>
+            <div class="col-mid-4">  
+		<div id="cr-player-losses"  class="tg-games-info text-center"> 	</div>
+            </div>
+          </div>
+        </div>
+				
+      </div>
+    </div>
+  </div>
+	
+	<div id="cr-player-list">
+		
+		<div class="container">
+			<div class="row">
+				<div id="cr-target-number"  class="text-center cr-target-no col-md-6"> 
+				</div>
+				<div id="cr-collected-crystal" class="text-center cr-player-collection col-md-6"> 
+				</div>
+			</div>
+		</div>	
+		<div id= "cr-key-id0" class="text-center crystal-class" crystalvalue="0"> 
+			<img src="assets/img/diamond2.jpg" class="img-responsive img-circle">
+		</div>
+		<div id= "cr-key-id1" class="text-center crystal-class" crystalvalue="0"> 
+			<img src="assets/img/diamond.jpg" class="img-responsive img-circle" >
+		</div>
+		<div id= "cr-key-id2" class="text-center crystal-class" crystalvalue="0"> 
+			<img src="assets/img/crystal3.png" class="img-responsive img-circle" >
+		</div>
+		<br>
+		<br>
+		<div id= "cr-key-id3" class="text-center crystal-class" crystalvalue="0"> 
+			<img src="assets/img/gem.jpg" class="img-responsive img-circle">
+		</div>
+	</div>
+	
+	<div id="tg-play-area">
+		<div>
+		</div>
+	</div>
+</body>	
+
+<script>
+	startGame();
+</script>		
